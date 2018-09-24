@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/username"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="70"
+        android:background="#CC002200"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+
+    <ImageButton
+        android:id="@+id/show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:background="#00000000"
+        app:srcCompat="@drawable/common_button" />
+
+</LinearLayout>

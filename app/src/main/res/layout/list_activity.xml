@@ -4,28 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:background="@drawable/rusted_metal_texture"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:text="TextView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom">
 
-    <ImageButton
-        android:id="@+id/show"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00000000"
-        app:srcCompat="@drawable/common_button" />
+        <TextView
+            android:id="@+id/username"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="70"
+            android:background="#CC002200"
+            android:enabled="false"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_dark"
+             />
 
-    <ImageButton
-        android:id="@+id/exit"
-        android:layout_width="0dp"
+        <ImageButton
+            android:id="@+id/show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:background="#00000000"
+            app:srcCompat="@drawable/common_button" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:background="#00000000"
+            app:srcCompat="@drawable/common_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00000000"
-        app:srcCompat="@drawable/common_button" />
+        android:gravity="bottom">
+        <ListView
+            android:id="@+id/otherUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" >
+
+        </ListView>
+    </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rusted_metal_texture"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/login_enter"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="@drawable/rounded_edittext"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+
+    <EditText
+        android:id="@+id/password_enter"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="#CC002200"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <FrameLayout
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="70" >
+        <ImageButton
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            app:srcCompat="@drawable/login_button" />
+        <TextView
+            android:id="@+id/enter_text"
+            android:enabled="false"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="LOGIN"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/login_register"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="#CC002200"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        />
+
+    <EditText
+        android:id="@+id/password_register"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="#CC002200"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/confirm_password_register"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="#CC002200"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <FrameLayout
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="70" >
+        <ImageButton
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            app:srcCompat="@drawable/login_button" />
+        <TextView
+            android:id="@+id/register_text"
+            android:enabled="false"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="REGISTER"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>
