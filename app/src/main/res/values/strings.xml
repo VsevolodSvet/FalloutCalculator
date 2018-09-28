@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FalloutCalculator</string>
+    <string name="password_uppercase">PASSWORD</string>
+    <string name="login_uppercase">LOGIN</string>
+    <string name="confirm_password_uppercase">CONFIRM PASSWORD</string>
+    <string name="register_uppercase">REGISTER</string>
+    <string name="enter_uppercase">ENTER</string>
 </resources>

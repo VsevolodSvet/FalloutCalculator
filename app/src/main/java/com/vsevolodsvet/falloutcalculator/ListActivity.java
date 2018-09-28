@@ -21,13 +21,12 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.list_activity);
         ImageButton showButton = findViewById(R.id.show);
         ImageButton exitButton = findViewById(R.id.exit);
-        showButton.setOnTouchListener(ButtonListeners.getOnTouchListener(showButton));
-        exitButton.setOnTouchListener(ButtonListeners.getOnTouchListener(exitButton));
+        showButton.setOnTouchListener(ButtonListeners.getOnTouchListener(showButton, R.drawable.common_button_pressed, R.drawable.common_button));
+        exitButton.setOnTouchListener(ButtonListeners.getOnTouchListener(exitButton, R.drawable.common_button_pressed, R.drawable.common_button));
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
     }
 }

@@ -19,14 +19,15 @@ import com.vsevolodsvet.falloutcalculator.Listeners.ButtonListeners;
 @SuppressLint("Registered")
 public class LoginActivity extends AppCompatActivity {
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
         ImageButton enterButton = findViewById(R.id.enter);
         ImageButton registerButton = findViewById(R.id.register);
-        enterButton.setOnTouchListener(ButtonListeners.getOnTouchListener(enterButton));
-        registerButton.setOnTouchListener(ButtonListeners.getOnTouchListener(registerButton));
+        enterButton.setOnTouchListener(ButtonListeners.getOnTouchListener(enterButton, R.drawable.login_button_pressed, R.drawable.login_button));
+        registerButton.setOnTouchListener(ButtonListeners.getOnTouchListener(registerButton, R.drawable.login_button_pressed, R.drawable.login_button));
 
         EditText edit;
 
